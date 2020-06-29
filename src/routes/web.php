@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::post('/upload', 'PostController@upload')->name('upload');
 Route::get('/', function () {
     return view('welcome');
 });
