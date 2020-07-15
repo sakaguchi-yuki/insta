@@ -11,6 +11,6 @@ class Post extends Model
     }
     //後にcreate()メソッドで保存するカラムを指定
     protected $fillable = [
-        'image_file_name', 'image_title',
+        'user', 'image_file_name', 'image_title',
     ];
 }
