@@ -24,3 +24,4 @@ Route::post('github/issue', 'Github\GithubController@createIssue');
 Route::get('login/github', 'Auth\LoginController@redirectToProvider');
 Route::get('login/github/callback', 'Auth\LoginController@handleProviderCallback');
 Route::get('/index', 'IndexController@index');
+Route::get('/profile', 'ProfileController@index');
