@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::post('/upload', 'PostController@upload')->name('upload');
+Route::post('/delete/{id}', 'PostController@delete');
 Route::get('/', function () {
     return view('welcome');
 });

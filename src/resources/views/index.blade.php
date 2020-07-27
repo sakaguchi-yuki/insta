@@ -6,6 +6,12 @@
     </div>
     <div class="card-body p-1">
         <span class="card-title">{{link_to('/profile',$post->user)}}<br>{{ $post->image_title }}</span>
+@if ($post->user===$username)
+        <form method="post" action="/delete/{{$post->id}}">
+        {{ csrf_field() }}
+        <input type="submit" value="削除">
+        </form>
     </div>
+@endif
 @endforeach
 {{ $posts->links() }}
