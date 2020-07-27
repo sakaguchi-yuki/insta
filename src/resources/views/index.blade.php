@@ -8,3 +8,4 @@
         <span class="card-title">{{link_to('/profile',$post->user)}}<br>{{ $post->image_title }}</span>
     </div>
 @endforeach
+{{ $posts->links() }}

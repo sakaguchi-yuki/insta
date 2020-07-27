@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class IndexController extends Controller
 {
     public function index(){
-	$posts = \App\Models\Post::orderBy('created_at', 'desc')->get();
+	$posts = \App\Models\Post::orderBy('created_at', 'desc')->simplePaginate(10);
         $data = [
             'posts' => $posts,
         ];
