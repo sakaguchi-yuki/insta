@@ -57,5 +57,9 @@ public function upload(Request $request){
 
         return redirect('index');
     }
-
+    public function delete($id)
+    {
+        Post::find($id)->delete();
+        return redirect('index');
+    }
 }
